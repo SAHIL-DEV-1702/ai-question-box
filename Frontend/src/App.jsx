@@ -14,7 +14,7 @@ const nodeTypes = {
 export default function App() {
   const [prompt, setPrompt] = useState('');
   const [aiResponse, setAiResponse] = useState('');
-  const [loading, setLoading] = useState(false); // ✅ Add loading state
+  const [loading, setLoading] = useState(false);
 
   const onInputChange = useCallback((evt) => {
     setPrompt(evt.target.value);
@@ -54,7 +54,7 @@ export default function App() {
   const handleRunFlow = async () => {
     if (!prompt) return alert("Type something in the node!");
 
-    setLoading(true); // ✅ Start loading
+    setLoading(true); 
     try {
       const res = await axios.post('http://localhost:8000/api/askAi', { prompt });
       const answer = res.data.response;
@@ -66,7 +66,7 @@ export default function App() {
     } catch (err) {
       console.error(err);
     } finally {
-      setLoading(false); // ✅ Stop loading
+      setLoading(false);
     }
   };
 
