@@ -23,7 +23,7 @@ A simple MERN stack application that lets users type a prompt, get AI-generated 
 
 1. Clone the repository:
 ```bash
-git clone <your-repo-link>
+git clone https://github.com/SAHIL-DEV-1702/ai-question-box.git
 cd ai-flow-app
 ```
 2. Backend Setup and Run
