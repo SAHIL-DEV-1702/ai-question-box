@@ -1,0 +1,6 @@
+.output,
+#text-area-in::-webkit-scrollbar {
+    display: none
+}
+
+@import "tailwindcss";
