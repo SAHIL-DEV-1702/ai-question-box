@@ -25,3 +25,22 @@ A simple MERN stack application that lets users type a prompt, get AI-generated 
 ```bash
 git clone <your-repo-link>
 cd ai-flow-app
+```
+2. Backend Setup and Run
+```bash
+cd Backend
+```
+Create a .env file in the backend folder:
+OPENROUTER_API_KEY=your_openrouter_api_key_here
+MONGO_URI=your_mongodb_connection_string
+
+```bash
+npm install
+npm run dev
+```
+3. Run Frontend
+```bash
+cd Frontend
+npm install
+npm run dev
+```
