@@ -30,7 +30,7 @@ cd ai-flow-app
 ```bash
 cd Backend
 ```
-Create a .env file in the backend folder:
+Create a .env file in the Backend folder:
 ```env
 OPENROUTER_API_KEY=your_openrouter_api_key_here
 MONGO_URI=your_mongodb_connection_string
@@ -39,9 +39,15 @@ MONGO_URI=your_mongodb_connection_string
 npm install
 npm run dev
 ```
-3. Run Frontend
+3. Frontend Setup and Run
 ```bash
 cd Frontend
+```
+Create a .env file in the Frontend folder:
+```env
+VITE_API_URL=your_server_url
+```
+```bash
 npm install
 npm run dev
 ```

@@ -56,7 +56,7 @@ export default function App() {
 
     setLoading(true); 
     try {
-      const res = await axios.post('http://localhost:8000/api/askAi', { prompt });
+      const res = await axios.post(import.meta.env.VITE_API_URL + '/api/askAi', { prompt });
       const answer = res.data.response;
       setAiResponse(answer);
       setNodes((nds) => nds.map((node) => {
@@ -72,7 +72,7 @@ export default function App() {
 
   const handleSave = async () => {
     try {
-      await axios.post('http://localhost:8000/api/savePrompt', { prompt, response: aiResponse });
+      await axios.post(import.meta.env.VITE_API_URL + '/api/savePrompt', { prompt, response: aiResponse });
       alert("Saved!");
     } catch (err) { console.error(err); }
   };
