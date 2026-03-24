@@ -34,7 +34,7 @@ Create a .env file in the backend folder:
 ```env
 OPENROUTER_API_KEY=your_openrouter_api_key_here
 MONGO_URI=your_mongodb_connection_string
-
+```
 ```bash
 npm install
 npm run dev
